@@ -93,7 +93,7 @@ class _GalleryPhotoViewWrapperState<T extends ImageItem, R extends Widget> exten
         ? PhotoViewGalleryPageOptions(
             // imageProvider: item.resourceType == ResourceType.asset ? AssetImage(item.resource) : NetworkImage(item.resource),
             imageProvider: CachedNetworkImageProvider(item.filePath),
-            initialScale: PhotoViewComputedScale.contained,
+            initialScale: PhotoViewComputedScale.covered,
             minScale: PhotoViewComputedScale.contained * (0.5 + index / 10),
             maxScale: PhotoViewComputedScale.covered * 4.1,
             heroAttributes: PhotoViewHeroAttributes(tag: item.id),
@@ -101,7 +101,7 @@ class _GalleryPhotoViewWrapperState<T extends ImageItem, R extends Widget> exten
         : PhotoViewGalleryPageOptions(
             // imageProvider: item.resourceType == ResourceType.asset ? AssetImage(item.resource) : NetworkImage(item.resource),
             imageProvider: AssetImage(item.filePath),
-            initialScale: PhotoViewComputedScale.contained,
+            initialScale: PhotoViewComputedScale.covered,
             minScale: PhotoViewComputedScale.contained * (0.5 + index / 10),
             maxScale: PhotoViewComputedScale.covered * 4.1,
             heroAttributes: PhotoViewHeroAttributes(tag: item.id),
