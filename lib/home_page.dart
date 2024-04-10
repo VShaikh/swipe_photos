@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:swipe_photos/src/swipe_photos.dart';
+import 'package:swipe_photos/src/gallery_photo_view_wrapper.dart';
 
 class HomePageWidget extends StatefulWidget {
   @override
