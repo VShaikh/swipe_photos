@@ -1,3 +1,3 @@
 library swipe_photos;
 
-export "src/image_gallery.dart";
+export "src/swipe_photos.dart";
